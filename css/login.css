@@ -355,6 +355,7 @@ input:focus::placeholder {
 		overflow: scroll;
 		background: url(../images/header-bg-2.jpg);
 		background-size: 200vh;
+		background-attachment: fixed;
 	}
 	.container {
 		flex-direction: column;
@@ -365,5 +366,20 @@ input:focus::placeholder {
 	}
 	.left_container {
 		margin: 80px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.right_container {
+		width: 100vw;
+		max-width: none;
+		margin: 0;
+		zoom: 0.8;
+	}
+	.left_container {
+		width: 90vw;
+		max-width: none;
+		margin: 80px 0;
+		zoom: 0.7;
 	}
 }

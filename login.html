@@ -21,33 +21,33 @@
 			<h1 class="h1">We do.</h1>
 			<h3 class="h3">Admissions Open 2019</h3>
 			<h4 class="h4">MIB</h2>
-			<h2 class="h2 schol"><span class="red">Scholarships</span> Available</h2>
-			<h3 class="merit red">Based on Merit<span>**</span></h3>
+				<h2 class="h2 schol"><span class="red">Scholarships</span> Available</h2>
+				<h3 class="merit red">Based on Merit<span>**</span></h3>
 		</div>
-	
+
 		<div class="right_container">
 			<h2 class="light">Application Form 2019</h2>
-	
+
 			<div class="actionBtns flex-between mb">
 				<a class="actionBtn bold regBtn" href="#">Register</a>
 				<a class="actionBtn bold loginBtn" href="#">Already Registered? Login</a>
 			</div>
-	
+
 			<div class="register active">
 				<div class="loginApi flex-between mb">
 					<a class="apiBtn bg-blue" href="#"><i class="fab mr fa-facebook-f"></i>Sign Up with Facebook</a>
 					<a class="apiBtn bg-red" href="#"><i class="fab mr fa-google-plus-g"></i>Sign Up with Google</a>
 				</div>
-	
+
 				<div class="or">
 					<p>OR</p>
 				</div>
-	
+
 				<div class="input-group">
 					<input type="text" placeholder="Enter Name *">
 					<input type="text" placeholder="Enter Email Address *">
 				</div>
-	
+
 				<div class="input-group">
 					<div class="mob_num">
 						<input class="areaCode" type="" value="+91">
@@ -55,7 +55,7 @@
 					</div>
 					<input type="text" placeholder="Enter OTP *">
 				</div>
-	
+
 				<div class="input-group">
 					<input type="text" placeholder="Any Password of Your Choice *">
 					<select name="" id="">
@@ -69,39 +69,40 @@
 						<option value="">MSc.</option>
 					</select>
 				</div>
-	
+
 				<div class="input-group">
 					<input type="text" placeholder="Enter State *">
 					<input type="text" placeholder="Enter City *">
 				</div>
-	
+
 				<div class="acceptTerms mt">
 					<input type="checkbox" id="accept">
-					<label for="accept">I agree to receive information regarding my submitted application by signing up on
+					<label for="accept">I agree to receive information regarding my submitted application by signing up
+						on
 						IMS Ghaziabad *</label>
 				</div>
-	
+
 				<a class="bg-red white btn mt mb" href="#">Register</a>
 			</div>
-	
+
 			<div class="login">
 				<div class="loginApi flex-between mb">
 					<a class="apiBtn bg-blue" href="#"><i class="fab mr fa-facebook-f"></i>Login with Facebook</a>
 					<a class="apiBtn bg-red" href="#"><i class="fab mr fa-google-plus-g"></i>Login with Google</a>
 				</div>
-	
+
 				<div class="or">
 					<p>OR</p>
 				</div>
-				
+
 				<input type="text" placeholder="Your Email *">
 				<input type="text" placeholder="Your Password *">
-	
+
 				<div class="acceptTerms mt">
 					<input type="checkbox" id="check">
 					<label for="check">Check to remember your login details</label>
 				</div>
-	
+
 				<a class="bg-red white btn mt mb" href="#">LOGIN</a>
 			</div>
 		</div>
@@ -112,23 +113,24 @@
 
 
 	<script>
-	
 		const reg = document.querySelector('.register');
 		const log = document.querySelector('.login');
 		const loginBtn = document.querySelector('.loginBtn');
 		const regBtn = document.querySelector('.regBtn');
 
-		regBtn.addEventListener('click', function() {
-			reg.classList.toggle('active');
-			log.classList.toggle('active');
-		})
-		loginBtn.addEventListener('click', function() {
-			log.classList.toggle('active');
-			reg.classList.toggle('active');
-		})
+		function toggle(btn) {
+			if (btn.classList.contains('active')) {
+				reg.classList.toggle('active');
+				log.classList.toggle('active');
+			}
+		}
 
-		
-
+		regBtn.addEventListener('click', function () {
+			toggle(log);
+		})
+		loginBtn.addEventListener('click', function () {
+			toggle(reg);
+		})
 	</script>
 
 </body>
