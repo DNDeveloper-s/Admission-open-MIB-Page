@@ -224,6 +224,7 @@ input:focus::placeholder {
 .btn {
 	padding: 7px 30px;
 	border-radius: 5px;
+	font-size: 18px;
 }
 
 .login {
