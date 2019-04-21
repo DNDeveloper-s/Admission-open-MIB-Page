@@ -1,0 +1,175 @@
+@font-face{
+	font-family:"black";
+	src:url("../fonts/DINPro-Black_13933.eot"), url("../fonts/DINPro-Black_13933.ttf"), url("../fonts/DINPro-Black_13933.woff");
+}
+
+@font-face{
+	font-family:"bold";
+	src:url("../fonts/DINPro-Bold_13934.eot"), url("../fonts/DINPro-Bold_13934.ttf"), url("../fonts/DINPro-Bold_13934.woff");
+}
+
+@font-face{
+	font-family:"regular";
+	src:url("../fonts/DINPro-Regular_13937.eot"), url("../fonts/DINPro-Regular_13937.ttf"), url("../fonts/DINPro-Regular_13937.woff");
+}
+
+@font-face{
+	font-family:"medium";
+	src:url("../fonts/dinpro-medium-opentype.eot"), url("../fonts/dinpro-medium-opentype.ttf"), url("../fonts/dinpro-medium-opentype.woff");
+}
+
+body{
+	font-family:"regular" !important;
+	background:#ffffff !important;
+	font-size:15px !important;
+	font-weight:400;
+}
+
+.black{
+	font-family:"black";
+}
+
+.bold{
+	font-family:"bold";
+}
+
+.regular{
+	font-family:"regular";
+}
+
+.medium{
+	font-family:"medium";
+}
+
+.red-font{
+	font-family:"bold";
+	color:#ed1b2f
+}
+
+.white{
+	color:#fff;
+}
+
+.red{
+	color:#db3541;
+}
+
+.lblue{
+	color: #00a5e2;
+	font-size: 27px;
+	text-transform:uppercase
+}
+
+.blue{
+	color:#14334f;
+}
+
+*:focus{
+	outline: none !important;
+}
+
+a{
+	color:inherit;
+}
+
+a:hover{
+	text-decoration: none !important;
+}
+
+a:focus{
+	outline: none !important;
+	border: none !important;
+	text-decoration: none !important;
+}
+
+.nomargin-top{
+	margin-top:0 !important;
+}
+
+.nomargin-bottom{
+	margin-bottom:0 !important;
+}
+
+.nomargin-left{
+	margin-left:0 !important;
+}
+
+.nomargin-right{
+	margin-right:0 !important;
+}
+
+.nopadding-top{
+	padding-top:0 !important;
+}
+
+.nopadding-bottom{
+	padding-bottom:0 !important;
+}
+
+.nopadding-left{
+	padding-left:0 !important;
+}
+
+.nopadding-right{
+	padding-right:0 !important;
+}
+input[type="checkbox"] {
+    width:auto;
+    /* margin: 0 15px !important; */
+}
+label.query-check {
+    text-align: center;
+    color: #fff;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+/*******/
+
+header { background:#c8e2f4 url(../images/header-bg.jpg) no-repeat center/cover}
+header .logo {padding: 35px 10px 0 0;}
+header .logoleft{ width:192px; height:auto;  }
+header .logoright{width:250px; height:auto; }
+header .header-text { padding:30px 0 30px 0;}
+header .header-text h3{color: #00285c;font-size:38px;margin:0;font-family:"regular";}
+header .header-text  h1{ color:#da2032; font-size:72px; margin:0 0 20px 0; font-weight:700;font-family:"black";}
+header .header-text h4{color: #00285c;font-size:24px;text-transform:uppercase;margin:0;font-family:"bold";}
+header .header-text p{color: #00285c;font-size:17px;text-transform:uppercase;margin:0;font-family:"medium";}
+header .header-text p span{ color:#da2032; font-size:20px; margin:0;font-family:"medium";}
+header .header-text p span.red{ color:#da2032; font-size:28px; margin:0;font-family:"medium";}
+.mtop20{ margin-top:20px!important}
+/*******/
+
+.form-area {width:90%; margin-top:20px; float:right}
+
+.wrapper{
+	max-width:1600px;
+	width:100%;
+	margin:auto;
+	background:#fff;
+}
+
+
+footer {background:#000000;padding: 10px 0 0 0;color:rgba(255,255,255,1.00);}
+footer p {font-size:11px;color:rgba(255,255,255,1.00);line-height:24px;margin-bottom: 0;}
+
+@media (max-width:767px){ 
+header .logoleft{ width:70%; height:auto; }
+header .logoright{width:100%; height:auto; }
+header .header-text h3{font-size:30px;}
+
+header .header-text  h1{font-size:60px;}
+footer p { font-size:12px; text-align:center; color:rgba(255,255,255,1.00); line-height:20px;}
+header .header-text p{ color:#000000; font-size:14px; line-height:20px;}
+header .header-text p span{ color:#da2032; font-size:17px; line-height:24px;}
+header .header-text p span.red{ color:#da2032; font-size:22px; }
+.form-area {width:95%; float:none; margin:10px auto}
+
+}
